@@ -17,7 +17,7 @@ nav{
   }
   
   nav ul{
-    /* display: none; */
+
     flex-direction: column;
     overflow-y: hidden;
     max-height: 0;
@@ -63,7 +63,7 @@ nav{
     color: #fff;
     text-align: center;
     font-family: "Circular Std";
-    font-size: 39px;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -93,19 +93,19 @@ nav{
   }
 
   #another {
-    background-image: url("/MobileWeb/JaydenInniss-MobileWeb/images/another.jpg");
+    background-image: url("/JaydenInniss-MobileWeb/images/another.jpg");
   }
 
   #adventure {
-    background-image: url("/MobileWeb/JaydenInniss-MobileWeb/images/adventure.jpg");
+    background-image: url("/JaydenInniss-MobileWeb/images/adventure.jpg");
   }
 
   #sport {
-    background-image: url("/MobileWeb/JaydenInniss-MobileWeb/images/sport.JPG");
+    background-image: url("/JaydenInniss-MobileWeb/images/sport.JPG");
   }
 
   #landscape {
-    background-image: url("/MobileWeb/JaydenInniss-MobileWeb/images/landscape.jpg");
+    background-image: url("/JaydenInniss-MobileWeb/images/landscape.jpg");
   }
 
   #bigvideoreel {
@@ -113,3 +113,53 @@ nav{
     margin-left: auto;
     margin-right: auto;
   }
+
+
+
+
+  .mainproject {
+    width: 60%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mainproject img {
+    width: 100%;
+
+  }
+
+  .thumbcontainer {
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2%;
+  }
+
+  .projthumb {
+    width: 28%;
+  }
+
+  .projthumb img{
+    width: 100%;
+  }
+
+  .contact {
+    background-color: #49768F;
+  }
+
+.contact img {
+  width: 40%;
+  display: flex;
+  padding-left: 55%;
+  padding-bottom: 200px;
+  border-radius: 10%;
+}
+
+.contact h3 {
+
+  padding-top: 40px;
+}
