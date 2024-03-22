@@ -1,38 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1e1e1e;
+}
 
+
+.header {
+
+  position: relative;
+  z-index: 9;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  height: 35vh;
+}
+
+.pagetitle {
+  position: absolute;
+  top: 2vh;
+  left: 40vw;
+
+}
+
+.pagetitle h2{
+  font-size: 4rem;
+}
+ 
 nav{
-    background: #000;
-    text-align: center;
+
+    top: 1%;
+    right: 1%;
+
+    display: block;
+    position: fixed;
+
   }
   
   nav a{
-    color: #fff;
+    color: rgb(21, 154, 221);
     text-decoration: none;
-    display: block;
-    padding: 20px;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
   }
   
   nav a:hover{
-    background-color:rgb(250, 254, 9);
-    color: #000;
+    background-color:rgb(21, 154, 221);
+    color: #fff;
   }
   
   nav ul{
 
-    flex-direction: column;
+    flex-direction: row;
     overflow-y: hidden;
     max-height: 0;
+    list-style-type: none; 
     /* transition-property: all;
     transition-duration: 1s; */
   }
   
   nav ul li{
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+
   }
 
 
   #idbanner {
     width: 100%;
     height: 655px;
+  }
+
+  .headlogo {
+    display: flex;
+    width: 18%;
+    position: absolute;
+    left: 3%;
   }
 
   .anchors {
@@ -46,7 +89,7 @@ nav{
     flex-direction: column;
     justify-content: center;
 
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: "Circular Std";
     font-size: 39px;
@@ -69,21 +112,47 @@ nav{
     line-height: normal;
     padding-top: 250px;
   }
-
-  #photobanner {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20fr 20fr 20fr 20fr;
+  
+  p {
+    font-size: 2rem;
+    color: #fff;
+    font-family: Geneva, Verdana, sans-serif;
   }
 
-  .photochunk {
+  .photogallery {
+    width: 97%;
 
-    height: 655px;
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr 20fr;
+    gap: 1%;
+    padding: 1%;
+    padding-left: 2%;
+    position: relative;
+  }
+
+  .singlephoto{
+
+    height: 28vmin;
     background: #49768F;
     background-size: cover;
     background-position: center;
     position: relative;
   }
+/* HHDHFHKEFHJHFJFHJF */
+  .photochunk {
+    height: 655px;
+    background: #49768F;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+  }
+  
+  .photobanner {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20fr 20fr 20fr 20fr;
+    }
 
   .overlay {
     width: 100%;
@@ -109,7 +178,9 @@ nav{
   }
 
   #bigvideoreel {
-    width: 80vmax;
+    width: 80%;
+
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -162,4 +233,63 @@ nav{
 .contact h3 {
 
   padding-top: 40px;
+}
+
+
+.contactinfo {
+  position: absolute;
+  bottom: 50%;
+  left: 15vw;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .photobanner {
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .photochunk {
+    height: 40vh;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+  h3 {
+    font-size: 2rem;
+
+  }
+
+  .photobanner {
+
+    grid-template-columns: 20fr;
+
+  }
+
+  .photochunk {
+    height: 40vh;
+  }
+
+  .pagetitle {
+    left: 5vw;
+
+  }
+
+  nav a {
+    color: rgb(21, 154, 221);
+    text-decoration: none;
+    font-size: 1.5rem;
+
+  }
 }
