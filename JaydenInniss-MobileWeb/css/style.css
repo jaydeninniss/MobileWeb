@@ -91,7 +91,7 @@ nav{
 
     color: #fff;
     text-align: center;
-    font-family: "Circular Std";
+    font-family: "Work Sans", sans-serif;
     font-size: 39px;
     font-style: normal;
     font-weight: 700;
@@ -105,7 +105,7 @@ nav{
 
     color: #fff;
     text-align: center;
-    font-family: "Circular Std";
+    font-family: "Work Sans", sans-serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -138,7 +138,7 @@ nav{
     background-position: center;
     position: relative;
   }
-/* HHDHFHKEFHJHFJFHJF */
+
   .photochunk {
     height: 655px;
     background: #49768F;
@@ -177,10 +177,12 @@ nav{
     background-image: url("/JaydenInniss-MobileWeb/images/landscape.jpg");
   }
 
+
   #bigvideoreel {
     display: flex;
     margin: auto;
-    width: 80%;
+    height: 60vh;
+    z-index: 8;
   }
 
 
@@ -283,7 +285,7 @@ nav{
 
   .photogallery {
 
-    padding-top: ;
+    padding-top: 40px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 
